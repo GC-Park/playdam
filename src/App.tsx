@@ -1,25 +1,19 @@
-import { useState } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import { theme } from './themes';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './pages/Home';
 
-const StyledButton = styled.button`
-  background: ${({ theme }) => theme.colors.black};
-  color: ${({ theme }) => theme.colors.danger};
-  font-size: ${({ theme }) => theme.fontSizes.extraLarge};
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-`;
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+]);
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <ThemeProvider theme={theme}>
-      <div>Count: {count}</div>
-      <StyledButton onClick={() => setCount((prev) => prev + 1)}>
-        acbssc
-      </StyledButton>
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }
