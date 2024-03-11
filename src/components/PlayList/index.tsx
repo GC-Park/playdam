@@ -1,10 +1,14 @@
 import styled from 'styled-components';
+import PlayItem from '../PlayItem';
+import mockData from '../mockData/playItemList.json';
+import { PlayItemProps } from '../../types/PlayItem';
 
 function PlayList() {
   return (
     <PlayListWrapper>
-      <PlayListTitle>상영 연극 시간 모음</PlayListTitle>
-      <PlayListItemsWrapper></PlayListItemsWrapper>
+      {mockData.playItemList.map((item: PlayItemProps) => (
+        <PlayItem id={item.id} title={item.title} location={item.location} time={item.time} image={item.image} />
+      ))}
     </PlayListWrapper>
   );
 }
@@ -13,24 +17,7 @@ const PlayListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70vw;
   margin: 0 auto;
-`;
-
-const PlayListTitle = styled.h2`
-  color: black;
-  font-size: 2rem;
-  font-weight: bold;
-  user-select: none;
-`;
-
-const PlayListItemsWrapper = styled.div`
-  display: grid;
-  place-items: center;
-  margin: 48px 0;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  grid-column-gap: 40px;
-  grid-row-gap: 48px;
 `;
 
 export default PlayList;
