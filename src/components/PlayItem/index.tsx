@@ -1,17 +1,14 @@
 import styled from 'styled-components';
+import { PlayItemProps } from '../../types/PlayItem';
 
-interface PlayItemProps {
-  
-}
-
-function PlayItem() {
+function PlayItem({ id, title, location, time, image }: PlayItemProps) {
   return (
     <PlayItemWrapper>
-      <PlayItemThumnail />
+      <PlayItemThumnail src={image} />
       <PlayItemInfo>
-        <PlayItemTitle></PlayItemTitle>
-        <PlayItemLocation></PlayItemLocation>
-        <PlayItemTimeOfWeek></PlayItemTimeOfWeek>
+        <PlayItemTitle>{title}</PlayItemTitle>
+        <PlayItemLocation>{location}</PlayItemLocation>
+        <PlayItemTimeOfWeek>{time}</PlayItemTimeOfWeek>
       </PlayItemInfo>
     </PlayItemWrapper>
   );
