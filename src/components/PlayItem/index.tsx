@@ -1,33 +1,69 @@
 import styled from 'styled-components';
 
+interface PlayItemProps {
+  
+}
+
 function PlayItem() {
   return (
-    <ItemWrapper>
-      <ItemThumnail />
-      <ItemTitle></ItemTitle>
-    </ItemWrapper>
+    <PlayItemWrapper>
+      <PlayItemThumnail />
+      <PlayItemInfo>
+        <PlayItemTitle></PlayItemTitle>
+        <PlayItemLocation></PlayItemLocation>
+        <PlayItemTimeOfWeek></PlayItemTimeOfWeek>
+      </PlayItemInfo>
+    </PlayItemWrapper>
   );
 }
 
-const ItemWrapper = styled.div`
+const PlayItemWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+`;
+
+const PlayItemThumnail = styled.img`
+  border-radius: 8px;
+  width: 120px;
+  height: 168px;
+  min-height: 120px;
+  min-width: 168px;
+
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 `;
 
-const ItemThumnail = styled.img`
-  border-radius: 8px;
-  width: 180px;
-  height: 270px;
-  background-size: contain;
+const PlayItemInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 `;
 
-const ItemTitle = styled.p`
-  margin-top: 16px;
-  font-size: 1.2rem;
-  font-weight: bold;
+const PlayItemTitle = styled.h3`
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+`;
+
+const PlayItemLocation = styled.span`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+`;
+
+const PlayItemTimeOfWeek = styled.p`
+  display: -webkit-box;
+
+  padding-top: 8px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 `;
 
 export default PlayItem;
