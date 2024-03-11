@@ -13,11 +13,12 @@ function PlayList() {
   );
 }
 
-const PlayListWrapper = styled.div`
+const PlayListWrapper = styled.ul`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
+
+  padding: 0 16px;
+  margin: 16px 0;
 `;
 
 export default PlayList;
