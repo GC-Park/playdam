@@ -3,4 +3,5 @@ export interface PlayItemProps {
   title: string;
   location: string;
   time: string;
+  image: string;
 }
