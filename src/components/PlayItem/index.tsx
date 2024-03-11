@@ -14,20 +14,28 @@ function PlayItem({ id, title, location, time, image }: PlayItemProps) {
   );
 }
 
-const PlayItemWrapper = styled.div`
+const PlayItemWrapper = styled.li`
   display: flex;
+  align-items: flex-start;
+
+  padding: 16px 8px;
+
+  border-bottom: 1px solid #e9eaed;
+  cursor: pointer;
 `;
 
 const PlayItemThumnail = styled.img`
-  border-radius: 8px;
-  width: 120px;
-  height: 168px;
-  min-height: 120px;
-  min-width: 168px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 120px;
+  height: 168px;
+  min-width: 120px;
+  min-height: 168px;
+
+  margin-right: 16px;
+
+  border-radius: 12px;
 `;
 
 const PlayItemInfo = styled.div`
@@ -46,6 +54,8 @@ const PlayItemLocation = styled.span`
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+
+  color: #a301db;
 `;
 
 const PlayItemTimeOfWeek = styled.p`
