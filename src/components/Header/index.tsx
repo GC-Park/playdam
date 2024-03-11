@@ -17,7 +17,6 @@ const HeaderWrapper = styled.div`
   align-items: center;
   padding: 0 20px;
   border-bottom: 1px solid #decfcf;
-  margin-bottom: 48px;
 `;
 
 const HeaderLogo = styled.h1`
