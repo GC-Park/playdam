@@ -1,16 +1,30 @@
 import styled from 'styled-components';
 import { PlayItemProps } from '../../types/PlayItem';
+import { useRef } from 'react';
+import useModal from '../../hook/useModal';
+import Modal from '../Modal';
+import PlayItemInformation from '../PlayItemInformation';
 
-function PlayItem({ id, title, location, time, image, age, runtime, state, detailImages }: PlayItemProps) {
+function PlayItem(props: PlayItemProps) {
+  const { id, title, location, time, image } = props;
+  const modalRef = useRef<HTMLDialogElement>(null);
+  const { isModalOpen, openModal, closeModal } = useModal();
   return (
-    <PlayItemWrapper>
-      <PlayItemThumnail src={image} />
-      <PlayItemInfo>
-        <PlayItemTitle>{title}</PlayItemTitle>
-        <PlayItemLocation>{location}</PlayItemLocation>
-        <PlayItemTimeOfWeek>{time}</PlayItemTimeOfWeek>
-      </PlayItemInfo>
-    </PlayItemWrapper>
+    <>
+      <PlayItemWrapper onClick={openModal}>
+        <PlayItemThumnail src={image} />
+        <PlayItemInfo>
+          <PlayItemTitle>{title}</PlayItemTitle>
+          <PlayItemLocation>{location}</PlayItemLocation>
+          <PlayItemTimeOfWeek>{time}</PlayItemTimeOfWeek>
+        </PlayItemInfo>
+      </PlayItemWrapper>
+      {isModalOpen && (
+        <Modal closeEvent={closeModal} dialogRef={modalRef}>
+          <PlayItemInformation  closeEvent={closeModal} PlayItemProps={props} />
+        </Modal>
+      )}
+    </>
   );
 }
 
