@@ -5,84 +5,132 @@
       "title": "연극 <옥탑방 고양이 [대학로]>",
       "location": "틴틴홀 (틴틴홀)",
       "time": "월요일 ~ 금요일(15:00, 17:15, 19:30), 토요일 ~ 일요일(11:50, 12:50, 14:00, 15:00, 16:15, 17:15, 18:30, 19:30, 20:30), HOL(11:50, 12:00, 12:50, 14:00, 14:10, 15:00, 16:15, 16:20, 17:15, 18:30, 19:30, 20:30)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF121682_210322_143051.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF121682_210322_143051.gif",
+      "age": "만 13세 이상",
+      "runtime": "1시간 40분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF121682_210322_0230191.jpg"
     },
     {
       "id": 2,
       "title": "연극 <연극라면>",
       "location": "해피씨어터 (해피씨어터)",
       "time": "월요일 ~ 금요일(14:30, 16:45, 19:00), 토요일(12:00, 14:05, 16:10, 18:15, 20:20), 일요일(12:45, 14:50, 16:55, 19:00), HOL(12:00, 14:05, 16:10, 18:15, 20:20)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF170941_210106_102633.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF170941_210106_102633.gif",
+      "age": "만 11세 이상",
+      "runtime": "1시간 40분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF170941_210820_0514311.jpg"
     },
     {
       "id": 3,
       "title": "연극 <쉬어매드니스 [대학로]>",
       "location": "콘텐츠박스(구. 르메이에르 씨어터)",
       "time": "월요일 ~ 금요일(17:00, 20:00), 토요일(13:00, 16:00, 19:00), 일요일(13:00, 15:00, 16:00, 18:00, 19:00), HOL(13:00, 16:00, 19:00)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF130891_221108_093357.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF130891_221108_093357.gif",
+      "age": "만 15세 이상",
+      "runtime": "1시간 50분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF130891_221108_0933571.jpg"
     },
     {
       "id": 4,
       "title": "연극 <한뼘사이 [라온아트홀]>",
       "location": "라온아트홀 (라온아트홀)",
       "time": "월요일(13:00, 15:00, 15:10, 17:20, 19:30), 토요일(11:50, 14:00, 16:10, 18:20, 20:30), 일요일(13:00, 15:10, 17:20, 19:30), HOL(13:00, 15:10, 17:20, 19:30), 화요일(15:00, 17:20, 19:30), 수요일(15:00, 17:20, 19:30), 목요일(15:00, 17:20, 19:30), 금요일(15:00, 17:20, 19:30), HOL(13:00, 15:10, 17:20, 19:30)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF172538_210318_095642.jpg"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF172538_210318_095642.jpg",
+      "age": "만 7세 이상",
+      "runtime": "1시간 40분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF172538_210318_0959275.jpg"
     },
     {
       "id": 5,
       "title": "연극 <자취>",
       "location": "댕로홀 (댕로홀)",
       "time": "월요일 ~ 금요일(14:30, 16:10, 16:30, 18:10, 20:00), 토요일(13:00, 14:00, 17:20, 19:00, 19:10, 19:20, 20:40, 20:45, 21:00), 일요일(13:00, 14:30, 17:30, 17:40, 17:50, 19:15, 19:20, 19:30, 21:00), HOL(13:00, 14:30, 16:00, 17:30, 17:40, 17:50, 19:15, 19:20, 21:00)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF161298_200911_090916.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF161298_200911_090916.gif",
+      "age": "만 13세 이상",
+      "runtime": "1시간 20분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF161298_210913_0357131.jpg"
     },
     {
       "id": 6,
       "title": "연극 <2호선 세입자 [서울]>",
       "location": "바탕골소극장 (바탕골소극장)",
       "time": "월요일 ~ 목요일(15:00, 17:00, 17:15, 17:30, 19:30), 금요일(15:00, 17:00, 17:15, 17:30, 19:30, 20:00), 토요일(12:50, 15:00, 17:15, 19:30), 일요일(13:00, 14:00, 15:30, 16:30, 18:00), HOL(13:00, 15:30, 18:00)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF185284_211230_095855.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF185284_211230_095855.gif",
+      "age": "만 13세 이상",
+      "runtime": "1시간 30분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF185284_211230_0958550.jpg"
     },
     {
       "id": 7,
       "title": "연극 <옥탑방 고양이 [대학로]>",
       "location": "틴틴홀 (틴틴홀)",
       "time": "월요일 ~ 금요일(15:00, 17:15, 19:30), 토요일 ~ 일요일(11:50, 12:50, 14:00, 15:00, 16:15, 17:15, 18:30, 19:30, 20:30), HOL(11:50, 12:00, 12:50, 14:00, 14:10, 15:00, 16:15, 16:20, 17:15, 18:30, 19:30, 20:30)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF121682_210322_143051.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF121682_210322_143051.gif",
+      "age": "만 13세 이상",
+      "runtime": "1시간 40분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF121682_210322_0230191.jpg"
     },
     {
       "id": 8,
       "title": "연극 <연극라면>",
       "location": "해피씨어터 (해피씨어터)",
       "time": "월요일 ~ 금요일(14:30, 16:45, 19:00), 토요일(12:00, 14:05, 16:10, 18:15, 20:20), 일요일(12:45, 14:50, 16:55, 19:00), HOL(12:00, 14:05, 16:10, 18:15, 20:20)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF170941_210106_102633.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF170941_210106_102633.gif",
+      "age": "만 11세 이상",
+      "runtime": "1시간 40분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF170941_210820_0514311.jpg"
     },
     {
       "id": 9,
       "title": "연극 <쉬어매드니스 [대학로]>",
       "location": "콘텐츠박스(구. 르메이에르 씨어터)",
       "time": "월요일 ~ 금요일(17:00, 20:00), 토요일(13:00, 16:00, 19:00), 일요일(13:00, 15:00, 16:00, 18:00, 19:00), HOL(13:00, 16:00, 19:00)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF130891_221108_093357.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF130891_221108_093357.gif",
+      "age": "만 15세 이상",
+      "runtime": "1시간 50분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF130891_221108_0933571.jpg"
     },
     {
       "id": 10,
       "title": "연극 <한뼘사이 [라온아트홀]>",
       "location": "라온아트홀 (라온아트홀)",
       "time": "월요일(13:00, 15:00, 15:10, 17:20, 19:30), 토요일(11:50, 14:00, 16:10, 18:20, 20:30), 일요일(13:00, 15:10, 17:20, 19:30), HOL(13:00, 15:10, 17:20, 19:30), 화요일(15:00, 17:20, 19:30), 수요일(15:00, 17:20, 19:30), 목요일(15:00, 17:20, 19:30), 금요일(15:00, 17:20, 19:30), HOL(13:00, 15:10, 17:20, 19:30)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF172538_210318_095642.jpg"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF172538_210318_095642.jpg",
+      "age": "만 7세 이상",
+      "runtime": "1시간 40분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF172538_210318_0959275.jpg"
     },
     {
       "id": 11,
       "title": "연극 <자취>",
       "location": "댕로홀 (댕로홀)",
       "time": "월요일 ~ 금요일(14:30, 16:10, 16:30, 18:10, 20:00), 토요일(13:00, 14:00, 17:20, 19:00, 19:10, 19:20, 20:40, 20:45, 21:00), 일요일(13:00, 14:30, 17:30, 17:40, 17:50, 19:15, 19:20, 19:30, 21:00), HOL(13:00, 14:30, 16:00, 17:30, 17:40, 17:50, 19:15, 19:20, 21:00)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF161298_200911_090916.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF161298_200911_090916.gif",
+      "age": "만 13세 이상",
+      "runtime": "1시간 20분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF161298_210913_0357131.jpg"
     },
     {
       "id": 12,
       "title": "연극 <2호선 세입자 [서울]>",
       "location": "바탕골소극장 (바탕골소극장)",
       "time": "월요일 ~ 목요일(15:00, 17:00, 17:15, 17:30, 19:30), 금요일(15:00, 17:00, 17:15, 17:30, 19:30, 20:00), 토요일(12:50, 15:00, 17:15, 19:30), 일요일(13:00, 14:00, 15:30, 16:30, 18:00), HOL(13:00, 15:30, 18:00)",
-      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF185284_211230_095855.gif"
+      "image": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF185284_211230_095855.gif",
+      "age": "만 13세 이상",
+      "runtime": "1시간 30분",
+      "state": "공연중",
+      "detailImages": "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF185284_211230_0958550.jpg"
     }
   ]
 }
