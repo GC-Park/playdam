@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { PlayItemProps } from '../../types/PlayItem';
 
-function PlayItem({ id, title, location, time, image }: PlayItemProps) {
+function PlayItem({ id, title, location, time, image, age, runtime, state, detailImages }: PlayItemProps) {
   return (
     <PlayItemWrapper>
       <PlayItemThumnail src={image} />
