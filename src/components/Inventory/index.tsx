@@ -6,12 +6,10 @@ function Inventory() {
 
   const ScheduleOnClick = () => {
     setIsActive(true);
-    console.log(isActive) 
   };
 
   const reviewOnclick = () => {
     setIsActive(false);
-    console.log(isActive)
   };
 
   return (
