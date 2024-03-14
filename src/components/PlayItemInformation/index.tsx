@@ -19,7 +19,7 @@ const PlayItemInformation = ({ PlayItemProps, closeEvent }: PlayItemInformationP
       <PlayItemValue>{state}</PlayItemValue>
       <PlayItemKey>소개 포스터</PlayItemKey>
       <PlayItemPoster src={detailImages} />
-      <PlayItemButton onClick={closeEvent} />
+      <PlayItemButton onClick={closeEvent}>닫기</PlayItemButton>
     </PlayItemInformationWrapper>
   );
 };
@@ -51,7 +51,7 @@ const PlayItemValue = styled.p`
 `;
 
 const PlayItemPoster = styled.img`
-  width: 100%;
+  width: 300px;
 `;
 
 const PlayItemButton = styled.button`
