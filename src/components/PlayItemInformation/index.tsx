@@ -29,7 +29,7 @@ const PlayItemInformationWrapper = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  max-height: 95%;
+  max-height: 80%;
 
   padding: 32px 16px;
 
