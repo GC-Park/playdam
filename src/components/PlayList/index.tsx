@@ -8,6 +8,7 @@ function PlayList() {
     <PlayListWrapper>
       {mockData.playItemList.map((item: PlayItemProps) => (
         <PlayItem
+          key={item.id}
           id={item.id}
           title={item.title}
           location={item.location}
