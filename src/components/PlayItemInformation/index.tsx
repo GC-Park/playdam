@@ -11,15 +11,17 @@ const PlayItemInformation = ({ PlayItemProps, closeEvent }: PlayItemInformationP
 
   return (
     <PlayItemInformationWrapper>
-      <PlayItemKey>관람등급</PlayItemKey>
-      <PlayItemValue>{age}</PlayItemValue>
-      <PlayItemKey>공연시간</PlayItemKey>
-      <PlayItemValue>{runtime}</PlayItemValue>
-      <PlayItemKey>공연상태</PlayItemKey>
-      <PlayItemValue>{state}</PlayItemValue>
-      <PlayItemKey>소개 포스터</PlayItemKey>
-      <PlayItemPoster src={detailImages} />
-      <PlayItemButton onClick={closeEvent}>닫기</PlayItemButton>
+      <InformationsWrapper>
+        <PlayItemKey>관람등급</PlayItemKey>
+        <PlayItemValue>{age}</PlayItemValue>
+        <PlayItemKey>공연시간</PlayItemKey>
+        <PlayItemValue>{runtime}</PlayItemValue>
+        <PlayItemKey>공연상태</PlayItemKey>
+        <PlayItemValue>{state}</PlayItemValue>
+        <PlayItemKey>소개 포스터</PlayItemKey>
+        <PlayItemPoster src={detailImages} />
+        <PlayItemButton onClick={closeEvent}>닫기</PlayItemButton>
+      </InformationsWrapper>
     </PlayItemInformationWrapper>
   );
 };
@@ -34,13 +36,21 @@ const PlayItemInformationWrapper = styled.div`
   padding: 32px 16px;
 
   border-radius: 8px 8px 0px 0px;
-  background: #ffffff;;
+  background: #ffffff;
 
   overflow: scroll;
 `;
 
+const InformationsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 const PlayItemKey = styled.h3`
-  margin-bottom: 16px;
+  font-size: 18px;
+  margin-bottom: 4px;
 `;
 
 const PlayItemValue = styled.p`
@@ -58,6 +68,7 @@ const PlayItemButton = styled.button`
   width: 100%;
   height: 44px;
 
+  margin-top: 24px;
   margin-right: 16px;
 
   border: none;
@@ -67,6 +78,7 @@ const PlayItemButton = styled.button`
   cursor: pointer;
 
   background: #a301db;
+  color: #ffffff;
 
   &:last-child {
     margin-right: 0;
