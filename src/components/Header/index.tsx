@@ -1,29 +1,32 @@
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
+import PlaydamLogoSvg from '../../assets/playdam_logo.svg';
 
 function Header() {
   return (
     <HeaderWrapper>
-      <HeaderLogo>PLAYDAM</HeaderLogo>
+      <HeaderLogo />
     </HeaderWrapper>
   );
 }
 
 const HeaderWrapper = styled.div`
   height: 72px;
-  background-color: #A301DB;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #ffffff;
+
   padding: 0 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-const HeaderLogo = styled.h1`
+const HeaderLogo = styled(PlaydamLogoSvg)`
   cursor: pointer;
-  user-select: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: -0.1rem;
-  color: #ffffff;
 `;
 
 export default Header;
