@@ -30,6 +30,10 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
+
+body {
+  padding-top: 72px;
+}
   
   a {
     text-decoration:none;
