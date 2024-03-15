@@ -1,21 +1,29 @@
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
-function Inventory() {
-  const [isActive, setIsActive] = useState<boolean>(true);
+interface InventoryProps {
+  path: string;
+}
+
+function Inventory({ path }: InventoryProps) {
+  const navigate = useNavigate();
 
   const ScheduleOnClick = () => {
-    setIsActive(true);
+    navigate('/');
   };
 
   const reviewOnclick = () => {
-    setIsActive(false);
+    navigate('/review');
   };
 
   return (
     <InventoryWrapper>
-      <InventoryScheduleTap isActive={isActive} onClick={ScheduleOnClick}>연극 스케줄 모음</InventoryScheduleTap>
-      <InventoryReviewTap isActive={isActive} onClick={reviewOnclick}>연극 후기 모음</InventoryReviewTap>
+      <InventoryScheduleTap path={path} onClick={ScheduleOnClick}>
+        연극 스케줄 모음
+      </InventoryScheduleTap>
+      <InventoryReviewTap path={path} onClick={reviewOnclick}>
+        연극 후기 모음
+      </InventoryReviewTap>
     </InventoryWrapper>
   );
 }
@@ -25,7 +33,7 @@ const InventoryWrapper = styled.div`
   margin-top: 20px;
 `;
 
-const InventoryScheduleTap = styled.div<{ isActive: boolean }>`
+const InventoryScheduleTap = styled.div<{ path: string }>`
   width: 50%;
   font-family: 'Roboto';
   font-style: normal;
@@ -38,11 +46,11 @@ const InventoryScheduleTap = styled.div<{ isActive: boolean }>`
   margin-left: 16px;
   cursor: pointer;
 
-  color: ${({isActive}) => isActive ? "#A301DB" : "#667085"};
-  border-bottom: ${({isActive}) => isActive ? "2px solid #A301DB" : "2px solid #667085"};
+  color: ${({ path }) => (path === '/' ? '#A301DB' : '#667085')};
+  border-bottom: ${({ path }) => (path === '/' ? '2px solid #A301DB' : '2px solid #667085')};
 `;
 
-const InventoryReviewTap = styled.div<{ isActive: boolean }>`
+const InventoryReviewTap = styled.div<{ path: string }>`
   width: 50%;
   font-family: 'Roboto';
   font-style: normal;
@@ -55,8 +63,8 @@ const InventoryReviewTap = styled.div<{ isActive: boolean }>`
   margin-right: 16px;
   cursor: pointer;
 
-  color: ${({isActive}) => !isActive ? "#A301DB" : "#667085"};
-  border-bottom: ${({isActive}) => !isActive ? "2px solid #A301DB" : "2px solid #667085"};
+  color: ${({ path }) => (path === '/review' ? '#A301DB' : '#667085')};
+  border-bottom: ${({ path }) => (path === '/review' ? '2px solid #A301DB' : '2px solid #667085')};
 `;
 
 const InventoryName = styled.span``;
