@@ -30,7 +30,7 @@ function Inventory({ path }: InventoryProps) {
 
 const InventoryWrapper = styled.div`
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
 `;
 
 const InventoryScheduleTap = styled.div<{ path: string }>`
@@ -66,7 +66,5 @@ const InventoryReviewTap = styled.div<{ path: string }>`
   color: ${({ path }) => (path === '/review' ? '#A301DB' : '#667085')};
   border-bottom: ${({ path }) => (path === '/review' ? '2px solid #A301DB' : '2px solid #667085')};
 `;
-
-const InventoryName = styled.span``;
 
 export default Inventory;
