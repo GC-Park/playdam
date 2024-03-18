@@ -31,6 +31,8 @@ function Inventory({ path }: InventoryProps) {
 const InventoryWrapper = styled.div`
   display: flex;
   margin-top: 10px;
+
+  box-shadow: rgba(69, 69, 69, 0.15) 4px 4px 4px 0px;
 `;
 
 const InventoryScheduleTap = styled.div<{ path: string }>`

@@ -36,6 +36,8 @@ const PlayReviewItemButton = styled.button`
   border: 1px solid #A301DB;
   border-radius: 10px;
 
+  box-shadow: rgba(69, 69, 69, 0.15) 8px 8px 8px 0px;
+
   &:hover {
     color: #ffffff;
     background-color: #A301DB;
