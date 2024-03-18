@@ -28,10 +28,13 @@ const PlayReviewItemThumbnail = styled.img`
 `;
 
 const PlayReviewItemButton = styled.button`
-  width: 180px;
-  height: 60px;
-  margin-top: 32px;
-  color: #667085;
+  width: 110px;
+  height: 40px;
+  margin-top: 20px;
+  color: #A301DB;
+  background-color: #ffffff;
+  border: 1px solid #A301DB;
+  border-radius: 10px;
 
   &:hover {
     color: #ffffff;
