@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
-function PlayReviewItem() {
+interface PlayReviewItemProps {
+  id: number;
+  image: string;
+}
+
+function PlayReviewItem({id, image}:PlayReviewItemProps) {
   return <PlayReviewItemWrapper>
-    <PlayReviewItemThumbnail />
+    <PlayReviewItemThumbnail src={image}/>
     <PlayReviewItemButton>후기보기</PlayReviewItemButton>
   </PlayReviewItemWrapper>;
 }
