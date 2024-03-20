@@ -1,5 +1,5 @@
 export interface PlayReviewBlogProps {
-  id: 9;
+  id: number;
   name: string;
   title: string;
   date: string;
