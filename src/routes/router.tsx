@@ -3,6 +3,7 @@ import Root from './Root';
 import ErrorPage from './ErrorPage';
 import Home from '../pages/Home';
 import ReviewCollection from '../pages/ReviewCollection';
+import ReviewBlogCollection from '../pages/ReviewBlogCollection';
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ export const router = createBrowserRouter([
       {
         path: 'review',
         element: <ReviewCollection />,
+      },
+      {
+        path: 'review/:reviewId',
+        element: <ReviewBlogCollection />,
       },
     ],
   },
