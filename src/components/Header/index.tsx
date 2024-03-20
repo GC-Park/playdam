@@ -23,6 +23,8 @@ const HeaderWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  box-shadow: rgba(69, 69, 69, 0.1) 2px 2px 2px 0px;
 `;
 
 const HeaderLogo = styled(PlaydamLogoSvg)`
