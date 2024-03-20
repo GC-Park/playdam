@@ -7,14 +7,16 @@ interface PlayItemInformationProps {
 }
 
 const PlayItemInformation = ({ PlayItemProps, closeEvent }: PlayItemInformationProps) => {
-  const { id, age, runtime, state, detailImages } = PlayItemProps;
+  const { id, age, time, runtime, state, detailImages } = PlayItemProps;
 
   return (
     <PlayItemInformationWrapper>
       <InformationsWrapper>
+        <PlayItemKey>공연시간</PlayItemKey>
+        <PlayItemValue>{time}</PlayItemValue>
         <PlayItemKey>관람등급</PlayItemKey>
         <PlayItemValue>{age}</PlayItemValue>
-        <PlayItemKey>공연시간</PlayItemKey>
+        <PlayItemKey>관람시간</PlayItemKey>
         <PlayItemValue>{runtime}</PlayItemValue>
         <PlayItemKey>공연상태</PlayItemKey>
         <PlayItemValue>{state}</PlayItemValue>
