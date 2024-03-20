@@ -22,7 +22,7 @@ const PlayReviewItemWrapper = styled.div`
 
 const PlayReviewItemThumbnail = styled.img`
   border-radius: 8px;
-  width: 180px;
+  width: 100%;
   height: 270px;
   background-size: contain;
 `;
