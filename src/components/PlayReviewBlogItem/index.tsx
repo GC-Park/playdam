@@ -21,11 +21,12 @@ function PlayReviewBlogItem({ id, name, title, date, image }: PlayReviewBlogProp
 const PlayReviewBlogItemWrapper = styled.li`
   width: 100%;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 12px;
   background-color: #ffffff;
   list-style: none;
 
-  border: 1px solid #aaaaaa;
+  border: 1px solid rgba(229, 231, 235, 1);
+  box-shadow: rgba(69, 69, 69, 0.1) 2px 2px 2px 0px;
 `;
 
 const ThumbnailWrapper = styled.div`
