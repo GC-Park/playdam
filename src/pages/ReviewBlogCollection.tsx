@@ -5,6 +5,7 @@ import PlayReviewBlogList from '../components/PlayReviewBlogList';
 
 function ReviewBlogCollection() {
   let location = useLocation();
+  
   return (
     <>
       <Inventory path={location.pathname} />

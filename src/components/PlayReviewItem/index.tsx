@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 interface PlayReviewItemProps {
@@ -6,9 +7,15 @@ interface PlayReviewItemProps {
 }
 
 function PlayReviewItem({id, image}:PlayReviewItemProps) {
+  const navigate = useNavigate();
+
+  const onClickReviewItem = () => {
+    navigate(`/review/${id}`)
+  }
+  
   return <PlayReviewItemWrapper>
     <PlayReviewItemThumbnail src={image}/>
-    <PlayReviewItemButton>후기보기</PlayReviewItemButton>
+    <PlayReviewItemButton onClick={onClickReviewItem}>후기보기</PlayReviewItemButton>
   </PlayReviewItemWrapper>;
 }
 
