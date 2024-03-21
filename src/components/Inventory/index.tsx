@@ -65,8 +65,8 @@ const InventoryReviewTap = styled.div<{ path: string }>`
   margin-right: 16px;
   cursor: pointer;
 
-  color: ${({ path }) => (path === '/review' ? '#A301DB' : '#667085')};
-  border-bottom: ${({ path }) => (path === '/review' ? '2px solid #A301DB' : '2px solid #667085')};
+  color: ${({ path }) => (path !== '/' ? '#A301DB' : '#667085')};
+  border-bottom: ${({ path }) => (path !== '/' ? '2px solid #A301DB' : '2px solid #667085')};
 `;
 
 export default Inventory;
