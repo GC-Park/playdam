@@ -9,7 +9,9 @@ function PlayReviewBlogItem({ id, name, title, date, image }: PlayReviewBlogProp
       </ThumbnailWrapper>
       <PlayReviewBlogItemInfoContainer>
         <UserName>{name}</UserName>
-        <Title>{title}</Title>
+        <TitleWrapper>
+          <Title>{title}</Title>
+        </TitleWrapper>
         <CreatedAt>{date}</CreatedAt>
       </PlayReviewBlogItemInfoContainer>
     </PlayReviewBlogItemWrapper>
@@ -18,13 +20,12 @@ function PlayReviewBlogItem({ id, name, title, date, image }: PlayReviewBlogProp
 
 const PlayReviewBlogItemWrapper = styled.li`
   width: 100%;
-  height: 240px;
   padding: 20px;
   border-radius: 15px;
   background-color: #ffffff;
   list-style: none;
 
-  border: 3px solid #A301DB;
+  border: 1px solid #aaaaaa;
 `;
 
 const ThumbnailWrapper = styled.div`
@@ -32,14 +33,13 @@ const ThumbnailWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 154px;
+  height: 160px;
   border-radius: 15px;
-  margin-bottom: 20px;
 `;
 
 const Thumbnail = styled.img`
   width: 100%;
-  height: 154px;
+  height: 140px;
   border-radius: 15px;
   object-fit: cover;
 `;
@@ -47,28 +47,34 @@ const Thumbnail = styled.img`
 const PlayReviewBlogItemInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   width: 100%;
   padding: 10px;
 `;
 
 const UserName = styled.span`
   color: grey;
-  font-size: 16px;
+  font-size: 0.8rem;
+`;
+
+const TitleWrapper = styled.div`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 const Title = styled.span`
   color: black;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
 `;
 
 const CreatedAt = styled.span`
   width: 100%;
-  margin-top: 16px;
+  margin-top: 8px;
   color: grey;
   text-align: right;
-  font-size: 16px;
+  font-size: 0.8rem;
   font-weight: 700;
 `;
 
