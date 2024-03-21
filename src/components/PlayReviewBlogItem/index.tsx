@@ -27,6 +27,8 @@ const PlayReviewBlogItemWrapper = styled.li`
 
   border: 1px solid rgba(229, 231, 235, 1);
   box-shadow: rgba(69, 69, 69, 0.1) 2px 2px 2px 0px;
+
+  cursor: pointer;
 `;
 
 const ThumbnailWrapper = styled.div`
