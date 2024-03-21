@@ -1,15 +1,16 @@
 import styled from 'styled-components';
+import { PlayReviewBlogProps } from '../../types/PlayReviewBlog';
 
-function PlayReviewBlogItem() {
+function PlayReviewBlogItem({ id, name, title, date, image }: PlayReviewBlogProps) {
   return (
     <PlayReviewBlogItemWrapper>
       <ThumbnailWrapper>
-        <Thumbnail src="" />
+        <Thumbnail src={image} />
       </ThumbnailWrapper>
       <PlayReviewBlogItemInfoContainer>
-        <UserName></UserName>
-        <Title></Title>
-        <CreatedAt></CreatedAt>
+        <UserName>{name}</UserName>
+        <Title>{title}</Title>
+        <CreatedAt>{date}</CreatedAt>
       </PlayReviewBlogItemInfoContainer>
     </PlayReviewBlogItemWrapper>
   );
@@ -22,6 +23,8 @@ const PlayReviewBlogItemWrapper = styled.li`
   border-radius: 15px;
   background-color: #ffffff;
   list-style: none;
+
+  border: 3px solid #A301DB;
 `;
 
 const ThumbnailWrapper = styled.div`

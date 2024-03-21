@@ -1,13 +1,20 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import mockData from '../mockData/playReviewBlogList.json';
-import { PlayReviewBlogProps } from "../../types/PlayReviewBlog";
-import PlayReviewBlogItem from "../PlayReviewBlogItem";
+import { PlayReviewBlogProps } from '../../types/PlayReviewBlog';
+import PlayReviewBlogItem from '../PlayReviewBlogItem';
 
 function PlayReviewBlogList() {
   return (
     <PlayReviewBlogListWrapper>
       {mockData.playReviewBlogList.map((Item: PlayReviewBlogProps) => (
-        <PlayReviewBlogItem />
+        <PlayReviewBlogItem
+          key={Item.id}
+          id={Item.id}
+          name={Item.name}
+          title={Item.title}
+          date={Item.date}
+          image={Item.image}
+        />
       ))}
     </PlayReviewBlogListWrapper>
   );
