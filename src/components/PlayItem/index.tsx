@@ -50,6 +50,7 @@ const PlayItemThumnail = styled.img`
   margin-right: 16px;
 
   border-radius: 12px;
+  box-shadow: rgba(69, 69, 69, 0.1) 4px 4px 1px 0px;
 `;
 
 const PlayItemInfo = styled.div`

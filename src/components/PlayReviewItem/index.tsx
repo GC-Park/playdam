@@ -32,6 +32,8 @@ const PlayReviewItemThumbnail = styled.img`
   width: 100%;
   height: 270px;
   background-size: contain;
+
+  box-shadow: rgba(69, 69, 69, 0.1) 5px 5px 1px 0px;
 `;
 
 const PlayReviewItemButton = styled.button`

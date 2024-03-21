@@ -43,6 +43,8 @@ const Thumbnail = styled.img`
   height: 140px;
   border-radius: 15px;
   object-fit: cover;
+
+  box-shadow: rgba(69, 69, 69, 0.1) 4px 4px 2px 0px;
 `;
 
 const PlayReviewBlogItemInfoContainer = styled.div`
