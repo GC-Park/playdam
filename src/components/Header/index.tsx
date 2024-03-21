@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 import PlaydamLogoSvg from '../../assets/playdam_logo.svg';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+  const navigate = useNavigate();
+
+  const onClickHeaderLogo = () => {
+    navigate('/');
+  };
+
   return (
     <HeaderWrapper>
-      <HeaderLogo />
+      <HeaderLogo onClick={onClickHeaderLogo} />
     </HeaderWrapper>
   );
 }
