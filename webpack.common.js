@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ProvidePlugin } = require('webpack');
+const { ProvidePlugin, DefinePlugin } = require('webpack');
+const DotenvWebpackPlugin = require('dotenv-webpack');
 
 module.exports = {
   entry: {
@@ -17,6 +18,9 @@ module.exports = {
     }),
     new ProvidePlugin({
       React: 'react',
+    }),
+    new DotenvWebpackPlugin({
+      systemvars: true,
     }),
   ],
   resolve: {
