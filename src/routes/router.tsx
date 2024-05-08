@@ -4,6 +4,7 @@ import ErrorPage from './ErrorPage';
 import Home from '../pages/Home';
 import ReviewCollection from '../pages/ReviewCollection';
 import ReviewBlogCollection from '../pages/ReviewBlogCollection';
+import Chatting from '../components/Chatting/index';
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: 'review/:reviewId',
         element: <ReviewBlogCollection />,
+      },
+      {
+        path: 'chatting',
+        element: <Chatting />,
       },
     ],
   },
