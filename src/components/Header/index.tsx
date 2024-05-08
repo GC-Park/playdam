@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PlaydamLogoSvg from '../../assets/playdam_logo.svg';
+import PlaydamChatSvg from '../../assets/playdam_chat.svg';
 import { useNavigate } from 'react-router-dom';
 
 function Header() {
@@ -9,9 +10,14 @@ function Header() {
     navigate('/');
   };
 
+  const onClickHeaderChatLogo = () => {
+    navigate('/chatting');
+  };
+
   return (
     <HeaderWrapper>
       <HeaderLogo onClick={onClickHeaderLogo} />
+      <HeaderChatLogo onClick={onClickHeaderChatLogo} />
     </HeaderWrapper>
   );
 }
@@ -35,6 +41,13 @@ const HeaderWrapper = styled.div`
 `;
 
 const HeaderLogo = styled(PlaydamLogoSvg)`
+  cursor: pointer;
+`;
+
+const HeaderChatLogo = styled(PlaydamChatSvg)`
+  position: fixed;
+  right: 0;
+  bottom: 30px;
   cursor: pointer;
 `;
 
