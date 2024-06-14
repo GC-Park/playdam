@@ -19,10 +19,10 @@ function Inventory({ path }: InventoryProps) {
   return (
     <InventoryWrapper>
       <InventoryScheduleTap path={path} onClick={ScheduleOnClick}>
-        연극 스케줄 모음
+        연극 스케줄
       </InventoryScheduleTap>
       <InventoryReviewTap path={path} onClick={reviewOnclick}>
-        연극 후기 모음
+        연극 지구본
       </InventoryReviewTap>
     </InventoryWrapper>
   );
