@@ -8,7 +8,7 @@ export const CallGPT = async (message: string) => {
       Authorization: `Bearer ${process.env.OPEN_API_KEY}`,
     },
     body: JSON.stringify({
-      model: 'gpt-3.5-turbo',
+      model: 'ft:gpt-3.5-turbo-0125:personal::9ZhNwYO5',
       messages: [
         {
           role: 'system',
