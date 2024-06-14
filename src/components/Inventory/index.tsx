@@ -13,7 +13,7 @@ function Inventory({ path }: InventoryProps) {
   };
 
   const reviewOnclick = () => {
-    navigate('/review');
+    navigate('/particleEffect');
   };
 
   return (

@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import ReviewCollection from '../pages/ReviewCollection';
 import ReviewBlogCollection from '../pages/ReviewBlogCollection';
 import Chatting from '../components/Chatting/index';
+import PlayMuseum from '../pages/PlayMuseum';
 
 export const router = createBrowserRouter([
   {
@@ -17,8 +18,8 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: 'review',
-        element: <ReviewCollection />,
+        path: 'particleEffect',
+        element: <PlayMuseum />,
       },
       {
         path: 'review/:reviewId',
