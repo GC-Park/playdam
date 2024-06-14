@@ -7,7 +7,7 @@ function PlayReviewList() {
   return (
     <PlayReviewListWrapper>
       {mockData.playItemList.map((Item: PlayItemProps) => (
-        <PlayReviewItem key={Item.id} id={Item.id} image={Item.image} />
+        <PlayReviewItem key={Item.id} id={Item.id} image={Item.poster} />
       ))}
     </PlayReviewListWrapper>
   );
