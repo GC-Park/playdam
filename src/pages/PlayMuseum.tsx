@@ -37,7 +37,7 @@ const PlayMuseumCanvas = styled.canvas`
   position: absolute;
   left: 0;
   top: 0;
-  padding-top: 126px;
+  margin-top: 126px;
 `;
 
 export default PlayMuseum;
