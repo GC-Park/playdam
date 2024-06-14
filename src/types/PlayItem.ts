@@ -1,11 +1,11 @@
 export interface PlayItemProps {
   id: number;
   title: string;
-  location: string;
-  time: string;
-  image: string;
+  place: string;
+  times: string;
+  poster: string;
   age: string;
-  runtime: string;
-  state: string;
-  detailImages: string;
+  screeningTime: string;
+  relates: string;
+  directors: string;
 }
