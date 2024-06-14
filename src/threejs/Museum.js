@@ -110,7 +110,7 @@ export default function example() {
     let array;
 
     switch (type) {
-      case 'random':
+      case 'spread':
         array = randomPositionArray;
         break;
       case 'sphere':
@@ -128,7 +128,7 @@ export default function example() {
       });
 
       // 회전
-      if (type === 'random') {
+      if (type === 'spread') {
         gsap.to(imagePanels[i].mesh.rotation, {
           duration: 2,
           x: 0,
@@ -151,15 +151,16 @@ export default function example() {
   btnWrapper.classList.add('btns');
 
   const randomBtn = document.createElement('button');
-  randomBtn.dataset.type = 'random';
+  randomBtn.dataset.type = 'spread';
   randomBtn.style.cssText =
-    'width: 100px; height: 30px; position: absolute; right: 20px; bottom: 20px; color: #A301DB; background-color: #ffffff; border: 1px solid #A301DB; border-radius: 1px; box-shadow: rgba(69, 69, 69, 0.15) 8px 8px 8px 0px; cursor: pointer;' ;
-  randomBtn.innerHTML = 'Random';
+    'width: 100px; height: 30px; position: absolute; right: 20px; bottom: 20px; color: #A301DB; background-color: #ffffff; border: 1px solid #A301DB; border-radius: 1px; box-shadow: rgba(69, 69, 69, 0.15) 8px 8px 8px 0px; cursor: pointer;';
+  randomBtn.innerHTML = 'Spread';
   btnWrapper.append(randomBtn);
 
   const sphereBtn = document.createElement('button');
   sphereBtn.dataset.type = 'sphere';
-  sphereBtn.style.cssText =  'width: 100px; height: 30px; position: absolute; right: 20px; bottom: 60px; color: #A301DB; background-color: #ffffff; border: 1px solid #A301DB; border-radius: 1px; box-shadow: rgba(69, 69, 69, 0.15) 8px 8px 8px 0px; cursor: pointer;' ;
+  sphereBtn.style.cssText =
+    'width: 100px; height: 30px; position: absolute; right: 20px; bottom: 60px; color: #A301DB; background-color: #ffffff; border: 1px solid #A301DB; border-radius: 1px; box-shadow: rgba(69, 69, 69, 0.15) 8px 8px 8px 0px; cursor: pointer;';
   sphereBtn.innerHTML = 'Sphere';
   btnWrapper.append(sphereBtn);
 
@@ -168,6 +169,29 @@ export default function example() {
   // 이벤트
   btnWrapper.addEventListener('click', setShape);
   window.addEventListener('resize', setSize);
+
+  window.addEventListener('popstate', () => {
+    btnWrapper.remove();
+  });
+
+  window.addEventListener('hashchange', () => {
+    btnWrapper.remove();
+  });
+
+  // History API를 사용하여 URL 쿼리 부분 변경을 감지
+  const originalPushState = history.pushState;
+  history.pushState = function () {
+    originalPushState.apply(this, arguments);
+    const event = new Event('popstate');
+    window.dispatchEvent(event);
+  };
+
+  const originalReplaceState = history.replaceState;
+  history.replaceState = function () {
+    originalReplaceState.apply(this, arguments);
+    const event = new Event('popstate');
+    window.dispatchEvent(event);
+  };
 
   draw();
 }
