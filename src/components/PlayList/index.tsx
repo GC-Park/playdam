@@ -11,13 +11,13 @@ function PlayList() {
           key={item.id}
           id={item.id}
           title={item.title}
-          location={item.location}
-          time={item.time}
-          image={item.image}
+          place={item.place}
+          times={item.times}
+          poster={item.poster}
           age={item.age}
-          runtime={item.runtime}
-          state={item.state}
-          detailImages={item.detailImages}
+          screeningTime={item.screeningTime}
+          directors={item.directors}
+          relates={item.relates}
         />
       ))}
     </PlayListWrapper>

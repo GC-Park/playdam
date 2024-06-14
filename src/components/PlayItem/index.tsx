@@ -6,17 +6,17 @@ import Modal from '../Modal';
 import PlayItemInformation from '../PlayItemInformation';
 
 function PlayItem(props: PlayItemProps) {
-  const { id, title, location, time, image } = props;
+  const { id, title, place, times, poster } = props;
   const modalRef = useRef<HTMLDialogElement>(null);
   const { isModalOpen, openModal, closeModal } = useModal();
   return (
     <>
       <PlayItemWrapper onClick={openModal}>
-        <PlayItemThumnail src={image} />
+        <PlayItemThumnail src={poster} />
         <PlayItemInfo>
           <PlayItemTitle>{title}</PlayItemTitle>
-          <PlayItemLocation>{location}</PlayItemLocation>
-          <PlayItemTimeOfWeek>{time}</PlayItemTimeOfWeek>
+          <PlayItemLocation>{place}</PlayItemLocation>
+          <PlayItemTimeOfWeek>{times}</PlayItemTimeOfWeek>
         </PlayItemInfo>
       </PlayItemWrapper>
       {isModalOpen && (
