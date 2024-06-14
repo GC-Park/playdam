@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ProvidePlugin, DefinePlugin } = require('webpack');
 const DotenvWebpackPlugin = require('dotenv-webpack');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -22,6 +23,11 @@ module.exports = {
     new DotenvWebpackPlugin({
       systemvars: true,
     }),
+    new CopyWebpackPlugin({
+			patterns: [
+				{ from: './src/threejs/images', to: "./images" },
+			],
+		})
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
