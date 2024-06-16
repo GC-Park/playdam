@@ -21,7 +21,9 @@ const PlayItemInformation = ({ PlayItemProps, closeEvent }: PlayItemInformationP
         <PlayItemKey>제작진</PlayItemKey>
         <PlayItemValue>{directors}</PlayItemValue>
         <PlayItemKey>예매처</PlayItemKey>
-        <PlayItemValue>{relates}</PlayItemValue>
+        <PlayItemLink href={relates} target="_blank">
+          {relates}
+        </PlayItemLink>
         <PlayItemButton onClick={closeEvent}>닫기</PlayItemButton>
       </InformationsWrapper>
     </PlayItemInformationWrapper>
@@ -62,8 +64,21 @@ const PlayItemValue = styled.p`
   margin-bottom: 16px;
 `;
 
-const PlayItemPoster = styled.img`
-  width: 300px;
+const PlayItemLink = styled.a`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+
+  cursor: pointer;
+
+  &:hover {
+    font-size: 18px;
+  }
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 const PlayItemButton = styled.button`
@@ -88,6 +103,10 @@ const PlayItemButton = styled.button`
 
   &:hover {
     background: #7c3793;
+  }
+
+  &:focus {
+    outline: none;
   }
 `;
 
