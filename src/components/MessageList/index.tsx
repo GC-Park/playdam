@@ -1,7 +1,7 @@
-import { RefObject, useEffect, useRef } from "react";
-import { MessageProps } from "../Chatting";
-import { styled } from "styled-components";
-import Message from "../Message";
+import { RefObject, useEffect, useRef } from 'react';
+import { MessageProps } from '../Chatting';
+import { styled } from 'styled-components';
+import Message from '../Message';
 
 const MessageList = ({ messages, isLoading }: { messages: MessageProps[]; isLoading: boolean }) => {
   const scrollRef: RefObject<HTMLDivElement> = useRef(null);
@@ -10,14 +10,14 @@ const MessageList = ({ messages, isLoading }: { messages: MessageProps[]; isLoad
     if (scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
-  }, []);
+  }, [messages]);
 
   return isLoading ? (
-    <ChatMessageList>
+    <ChatMessageList ref={scrollRef}>
       <Message text="Loading..." isUser={true} />
     </ChatMessageList>
   ) : (
-    <ChatMessageList>
+    <ChatMessageList ref={scrollRef}>
       {messages.map((message: MessageProps) => {
         return (
           <Message key={`${message.text}-gpt`} text={message.text} isUser={message.isUser} isLoading={isLoading} />
@@ -33,4 +33,4 @@ const ChatMessageList = styled.div`
   overflow-y: auto;
 `;
 
-export default MessageList
+export default MessageList;
