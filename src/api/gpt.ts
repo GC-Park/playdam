@@ -31,7 +31,7 @@ export const CallGPT = async (message: string) => {
         {
           role: 'assistant',
           content:
-            '옥탑방 고양이 [대학로] 공연시간은/는 월요일 ~ 금요일(15:00,17:15,19:30), 토요일 ~ 일요일(11:50,12:50,14:00,15:00,16:15,17:15,18:30,19:30,20:30), HOL(11:50,12:00,12:50,14:00,14:10,15:00,16:15,16:20,17:15,18:30,19:30,20:30)입니다. 감사합니다.',
+            '옥탑방 고양이 공연시간은/는 월요일 ~ 금요일(15:00,17:15,19:30), 토요일 ~ 일요일(11:50,12:50,14:00,15:00,16:15,17:15,18:30,19:30,20:30), HOL(11:50,12:00,12:50,14:00,14:10,15:00,16:15,16:20,17:15,18:30,19:30,20:30)입니다. 감사합니다.',
         },
         {
           role: 'user',
@@ -39,7 +39,7 @@ export const CallGPT = async (message: string) => {
         },
         {
           role: 'assistant',
-          content: '옥탑방 고양이 [대학로] 상영시간은/는 1시간 40분입니다. 감사합니다.',
+          content: '옥탑방 고양이 상영시간은/는 1시간 40분입니다. 감사합니다.',
         },
         {
           role: 'user',
@@ -47,7 +47,7 @@ export const CallGPT = async (message: string) => {
         },
         {
           role: 'assistant',
-          content: '옥탑방 고양이 [대학로] 제작진은/는 비공개입니다. 감사합니다.',
+          content: '옥탑방 고양이 제작진은/는 비공개입니다. 감사합니다.',
         },
         {
           role: 'user',
@@ -56,54 +56,54 @@ export const CallGPT = async (message: string) => {
         {
           role: 'assistant',
           content:
-            '옥탑방 고양이 [대학로] 연극배우은/는 김혜라, 김정문, 한채빈, 이진실, 김수현, 김태인, 김채율 등입니다. 감사합니다.',
+            '옥탑방 고양이 연극배우은/는 김혜라, 김정문, 한채빈, 이진실, 김수현, 김태인, 김채율 등입니다. 감사합니다.',
         },
         { role: 'user', content: '옥탑방 고양이 공연 장소가 어디야?' },
-        { role: 'assistant', content: '옥탑방 고양이 [대학로] 공연장소은/는 틴틴홀 (틴틴홀)입니다. 감사합니다.' },
+        { role: 'assistant', content: '옥탑방 고양이 공연장소은/는 틴틴홀 (틴틴홀)입니다. 감사합니다.' },
         {
           role: 'user',
           content: '옥탑방 고양이 [대학로]에 대해 물어보고 싶어요. 관람 연령 제한이 있어?',
         },
         {
           role: 'assistant',
-          content: '옥탑방 고양이 [대학로] 관람연령은/는 만 13세 이상입니다. 감사합니다.',
+          content: '옥탑방 고양이 관람연령은/는 만 13세 이상입니다. 감사합니다.',
         },
-        { role: 'user', content: '불편한 편의점 [대학로] 포스터 보여줘.' },
-        { role: 'user', content: '쉬어매드니스 [대학로] 포스터 보여줘.' },
+        { role: 'user', content: '불편한 편의점 포스터 보여줘.' },
+        { role: 'user', content: '쉬어매드니스 포스터 보여줘.' },
         {
           role: 'assistant',
           content:
-            '쉬어매드니스 [대학로] 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF241378_240520_142626.gif입니다. 감사합니다.',
+            '쉬어매드니스 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF241378_240520_142626.gif입니다. 감사합니다.',
         },
-        { role: 'user', content: '쉬어매드니스 [대학로] 예매처 알려줘.' },
+        { role: 'user', content: '쉬어매드니스 예매처 알려줘.' },
         {
           role: 'assistant',
           content:
-            '쉬어매드니스 [대학로] 예매처은/는 http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=24006928입니다. 감사합니다.',
+            '쉬어매드니스 예매처은/는 http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=24006928입니다. 감사합니다.',
         },
-        { role: 'user', content: '2호선 세입자 [대학로] 포스터 보여줘.' },
+        { role: 'user', content: '2호선 세입자 포스터 보여줘.' },
         {
           role: 'assistant',
           content:
-            '2호선 세입자 [대학로] 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF239635_240422_115326.gif입니다. 감사합니다.',
+            '2호선 세입자 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF239635_240422_115326.gif입니다. 감사합니다.',
         },
-        { role: 'user', content: '2호선 세입자 [대학로] 예매처 알려줘.' },
+        { role: 'user', content: '2호선 세입자 예매처 알려줘.' },
         {
           role: 'assistant',
           content:
-            '2호선 세입자 [대학로] 예매처은/는 https://ticket.wemakeprice.com/product/3000006990입니다. 감사합니다.',
+            '2호선 세입자 예매처은/는 https://ticket.wemakeprice.com/product/3000006990입니다. 감사합니다.',
         },
-        { role: 'user', content: '내일은 내일에게 [대학로] 포스터 보여줘.' },
+        { role: 'user', content: '내일은 내일에게 포스터 보여줘.' },
         {
           role: 'assistant',
           content:
-            '내일은 내일에게 [대학로] 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF238631_240403_172203.gif입니다. 감사합니다.',
+            '내일은 내일에게 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF238631_240403_172203.gif입니다. 감사합니다.',
         },
-        { role: 'user', content: '내일은 내일에게 [대학로] 예매처 알려줘.' },
+        { role: 'user', content: '내일은 내일에게 예매처 알려줘.' },
         {
           role: 'assistant',
           content:
-            '내일은 내일에게 [대학로] 예매처은/는 https://www.maketicket.co.kr/ticket/GD24798입니다. 감사합니다.',
+            '내일은 내일에게 예매처은/는 https://www.maketicket.co.kr/ticket/GD24798입니다. 감사합니다.',
         },
         { role: 'user', content: '비누향기 포스터 보여줘.' },
         {
@@ -171,17 +171,17 @@ export const CallGPT = async (message: string) => {
           role: 'assistant',
           content: '오백에 삼십 [JTN 아트홀] 예매처은/는 http://www.maketicket.co.kr/ticket/GD24752입니다. 감사합니다.',
         },
-        { role: 'user', content: '딜리버리 [대학로] 포스터 보여줘.' },
+        { role: 'user', content: '딜리버리 포스터 보여줘.' },
         {
           role: 'assistant',
           content:
-            '딜리버리 [대학로] 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF234318_240122_140900.jpg입니다. 감사합니다.',
+            '딜리버리 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF234318_240122_140900.jpg입니다. 감사합니다.',
         },
-        { role: 'user', content: '딜리버리 [대학로] 예매처 알려줘.' },
+        { role: 'user', content: '딜리버리 예매처 알려줘.' },
         {
           role: 'assistant',
           content:
-            '딜리버리 [대학로] 예매처은/는 https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=12049입니다. 감사합니다.',
+            '딜리버리 예매처은/는 https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=12049입니다. 감사합니다.',
         },
         { role: 'user', content: '운빨로맨스 [컬쳐씨어터] 포스터 보여줘.' },
         {
@@ -206,13 +206,13 @@ export const CallGPT = async (message: string) => {
           role: 'assistant',
           content: '자취 예매처은/는 https://www.nanumticket.or.kr/pe/detail.html?p_idx=11295입니다. 감사합니다.',
         },
-        { role: 'user', content: '한뼘사이 [라온아트홀] 포스터 보여줘.' },
+        { role: 'user', content: '한뼘사이 포스터 보여줘.' },
         {
           role: 'assistant',
           content:
             '한뼘사이 [라온아트홀] 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF172538_210318_095642.jpg입니다. 감사합니다.',
         },
-        { role: 'user', content: '한뼘사이 [라온아트홀] 예매처 알려줘.' },
+        { role: 'user', content: '한뼘사이 예매처 알려줘.' },
         {
           role: 'assistant',
           content:
@@ -229,17 +229,17 @@ export const CallGPT = async (message: string) => {
           role: 'assistant',
           content: '연극라면 예매처은/는 https://booking.naver.com/booking/12/bizes/462246입니다. 감사합니다.',
         },
-        { role: 'user', content: '옥탑방 고양이 [대학로] 포스터 보여줘.' },
+        { role: 'user', content: '옥탑방 고양이 포스터 보여줘.' },
         {
           role: 'assistant',
           content:
-            '옥탑방 고양이 [대학로] 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF121682_210322_143051.gif입니다. 감사합니다.',
+            '옥탑방 고양이 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF121682_210322_143051.gif입니다. 감사합니다.',
         },
-        { role: 'user', content: '옥탑방 고양이 [대학로] 예매처 알려줘.' },
+        { role: 'user', content: '옥탑방 고양이 예매처 알려줘.' },
         {
           role: 'assistant',
           content:
-            '옥탑방 고양이 [대학로] 예매처은/는 https://booking.naver.com/booking/12/bizes/170018?area=bni입니다. 감사합니다.',
+            '옥탑방 고양이 예매처은/는 https://booking.naver.com/booking/12/bizes/170018?area=bni입니다. 감사합니다.',
         },
 
         { role: 'user', content: message },
