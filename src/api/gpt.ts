@@ -17,7 +17,7 @@ export const CallGPT = async (message: string) => {
         },
         {
           role: 'user',
-          content: '로맨스 코미디 장르 연극을 볼 생각인데 하나 추천해줘!',
+          content: '연극 하나만 추천해줘.',
         },
         {
           role: 'assistant',
