@@ -160,13 +160,13 @@ export const CallGPT = async (message: string) => {
           content:
             '남사친 여사친 예매처은/는 http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=24007080입니다. 감사합니다.',
         },
-        { role: 'user', content: '오백에 삼십 [JTN 아트홀] 포스터 보여줘.' },
+        { role: 'user', content: '오백에 삼십 포스터 보여줘.' },
         {
           role: 'assistant',
           content:
             '오백에 삼십 [JTN 아트홀] 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF235344_240213_141816.jpg입니다. 감사합니다.',
         },
-        { role: 'user', content: '오백에 삼십 [JTN 아트홀] 예매처 알려줘.' },
+        { role: 'user', content: '오백에 삼십 예매처 알려줘.' },
         {
           role: 'assistant',
           content: '오백에 삼십 [JTN 아트홀] 예매처은/는 http://www.maketicket.co.kr/ticket/GD24752입니다. 감사합니다.',
@@ -183,13 +183,13 @@ export const CallGPT = async (message: string) => {
           content:
             '딜리버리 예매처은/는 https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=12049입니다. 감사합니다.',
         },
-        { role: 'user', content: '운빨로맨스 [컬쳐씨어터] 포스터 보여줘.' },
+        { role: 'user', content: '운빨로맨스 포스터 보여줘.' },
         {
           role: 'assistant',
           content:
             '운빨로맨스 [컬쳐씨어터] 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF173180_240510_093731.jpg입니다. 감사합니다.',
         },
-        { role: 'user', content: '운빨로맨스 [컬쳐씨어터] 예매처 알려줘.' },
+        { role: 'user', content: '운빨로맨스 예매처 알려줘.' },
         {
           role: 'assistant',
           content:
@@ -218,13 +218,13 @@ export const CallGPT = async (message: string) => {
           content:
             '한뼘사이 [라온아트홀] 예매처은/는 https://booking.naver.com/booking/12/bizes/69133입니다. 감사합니다.',
         },
-        { role: 'user', content: '연극라면 포스터 보여줘.' },
+        { role: 'user', content: '연극 라면 포스터 보여줘.' },
         {
           role: 'assistant',
           content:
             '연극라면 연극포스터은/는 http://www.kopis.or.kr/upload/pfmPoster/PF_PF170941_210106_102633.gif입니다. 감사합니다.',
         },
-        { role: 'user', content: '연극라면 예매처 알려줘.' },
+        { role: 'user', content: '연극 라면 예매처 알려줘.' },
         {
           role: 'assistant',
           content: '연극라면 예매처은/는 https://booking.naver.com/booking/12/bizes/462246입니다. 감사합니다.',
