@@ -4,8 +4,8 @@ import ErrorPage from './ErrorPage';
 import Home from '../pages/Home';
 import ReviewCollection from '../pages/ReviewCollection';
 import ReviewBlogCollection from '../pages/ReviewBlogCollection';
-import Chatting from '../components/Chatting/index';
 import PlayMuseum from '../pages/PlayMuseum';
+import PlayChatting from '../pages/PlayChatting';
 
 export const router = createBrowserRouter([
   {
@@ -22,12 +22,16 @@ export const router = createBrowserRouter([
         element: <PlayMuseum />,
       },
       {
+        path: 'review',
+        element: <ReviewCollection />,
+      },
+      {
         path: 'review/:reviewId',
         element: <ReviewBlogCollection />,
       },
       {
         path: 'chatting',
-        element: <Chatting />,
+        element: <PlayChatting />,
       },
     ],
   },
