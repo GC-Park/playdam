@@ -2,14 +2,25 @@ import { styled } from 'styled-components';
 
 const Message = ({ text, isUser }: any) => {
   const parseMessage = (text: string) => {
-    const urlRegex = /(https?:\/\/.*\.(?:png|jpg|jpeg|gif))/gi;
+    // 수정된 정규식 패턴: 이미지 URL (png, jpg, jpeg, gif) 또는 일반 URL
+    const urlRegex = /(https?:\/\/.*\.(?:png|jpg|jpeg|gif))|(https?:\/\/[\w-]+(\.[\w-]+)+[/#?]?.*[\w=#-])/gi;
     const parts = text.split(urlRegex);
 
     return parts.map((part, index) => {
-      if (urlRegex.test(part)) {
-        // Ensure the URL uses https
-        const imageUrl = part.startsWith('http://') ? part.replace('http://', 'https://') : part;
-        return <img key={index} src={imageUrl} alt="image" style={{ maxWidth: '100%', height: 'auto' }} />;
+      if (part) {
+        if (part.match(/\.(png|jpg|jpeg|gif)$/i)) {
+          // 이미지 URL인 경우 처리
+          const imageUrl = part.startsWith('http://') ? part.replace('http://', 'https://') : part;
+          return <img key={index} src={imageUrl} alt="image" style={{ maxWidth: '100%', height: 'auto' }} />;
+        } else {
+          // 일반 URL인 경우 처리
+          const url = part.startsWith('http://') || part.startsWith('https://') ? part : `https://${part}`;
+          return (
+            <a key={index} href={url} target="_blank" rel="noopener noreferrer">
+              {part}
+            </a>
+          );
+        }
       }
       return part;
     });
