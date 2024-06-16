@@ -39,8 +39,22 @@ const Chatting = () => {
     } catch (error) {
     } finally {
       setIsLoading(false);
+      localStorage.setItem('chatgpt', JSON.stringify(messages));
     }
   };
+
+  useEffect(() => {
+    const localMessage = localStorage.getItem('chatgpt');
+    if (localMessage !== null) {
+      const parsedMessage = JSON.parse(localMessage);
+      setMessages(parsedMessage);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('chatgpt', JSON.stringify(messages));
+  }, [messages]);
+
   return (
     <ChattingApp>
       <ChattingBox>
