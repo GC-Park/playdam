@@ -12,11 +12,7 @@ const MessageList = ({ messages, isLoading }: { messages: MessageProps[]; isLoad
     }
   }, [messages]);
 
-  return isLoading ? (
-    <ChatMessageList ref={scrollRef}>
-      <Message text="Loading..." isUser={true} />
-    </ChatMessageList>
-  ) : (
+  return (
     <ChatMessageList ref={scrollRef}>
       {messages.map((message: MessageProps) => {
         return (

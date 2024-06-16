@@ -11,24 +11,36 @@ export interface MessageProps {
 }
 
 const Chatting = () => {
-  const [messages, setMessages] = useState<MessageProps[]>([]);
+  const [messages, setMessages] = useState<MessageProps[]>([
+    {
+      text: '안녕하세요. 연극 관련 정보를 제공하는 챗봇 플레이담입니다. 연극에 관해 궁금한 사항이 있으시면 무엇이든 물어봐주세요.',
+      isUser: false,
+    },
+  ]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleSendMessage = async (message: string) => {
     try {
       setIsLoading(true);
-      const gptMessage = await CallGPT(message);
+
       setMessages(prevMessages => [
         ...prevMessages,
         { text: message, isUser: true },
-        { text: gptMessage, isUser: false },
+        { text: 'Loading...', isUser: false },
       ]);
+
+      const gptMessage = await CallGPT(message);
+
+      setMessages(prevMessages => {
+        const newMessages = [...prevMessages];
+        newMessages[newMessages.length - 1] = { text: gptMessage, isUser: false };
+        return newMessages;
+      });
     } catch (error) {
     } finally {
       setIsLoading(false);
     }
   };
-
   return (
     <ChattingApp>
       <ChattingBox>
